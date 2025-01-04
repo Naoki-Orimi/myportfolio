@@ -1,0 +1,56 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #132343;
+    color: #8E8B95;
+}
+
+.header .logo img {
+    height: 40px;
+}
+
+.header .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+}
+
+.header .nav a {
+    color: #8E8B95;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s; /* 色と変形のトランジションを設定 */
+}
+
+.header .nav a:hover {
+    color: #4acdf5;
+    transform: scale(1.1); /* ホバー時に1.1倍に拡大 */
+}
+
+/* スマホ対応のスタイル */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* ヘッダーを縦に並べる */
+        align-items: flex-start; /* 左揃えにする */
+        padding: 10px;
+    }
+
+    .header .nav{
+        width: 100%; /* スマホ版では上部の幅を全てnavで固定する */
+    }
+
+    .header .nav ul {
+        flex-direction: column; /* ナビゲーションを縦に並べる */
+        gap: 10px; /* ギャップを小さくする */
+        font-size: 1rem; /* フォントサイズを小さくする */
+        text-align: center;
+    }
+
+    .header .nav a {
+        font-size: 1rem; /* フォントサイズを小さくする */
+    }
+}

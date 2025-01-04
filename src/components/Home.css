@@ -1,0 +1,39 @@
+.hero {
+    background: url('/raptop.webp') no-repeat center center;
+    background-size: cover;
+    height: 80vh;
+    position: relative; /* 子要素の絶対位置を基準にするためにrelativeを設定 */
+}
+
+.hero-content {
+    position: absolute;
+    top: 20%; /* 親要素から20%下に配置 */
+    left: 0; /* 親要素の左端に配置 */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* 半透明の背景色 */
+    border-radius: 10px; /* 角を丸くする */
+    text-align: left; /* 文字を左寄せにする */
+}
+
+.hero h1, .hero p {
+    color: #000000; /* テキスト色 */
+    margin: 0;
+    text-align: left;
+    display: inline-block;
+}
+
+.hero h1 {
+    margin-bottom: 10px;
+}
+
+.hero .char {
+    display: inline-block;
+    transition: transform 0.2s ease;
+    cursor: default; /* マウスオーバー時にカーソルの形を矢印のままにする */
+}
+
+.hero .space {
+    display: inline-block;
+    width: 0.5em; /* 半角スペースの幅を指定 */
+    cursor: default; /* マウスオーバー時にカーソルの形を矢印のままにする */
+}
