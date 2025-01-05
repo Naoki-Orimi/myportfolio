@@ -11,9 +11,9 @@ const Header: React.FC = () => {
             </div>
             <nav className="nav">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#profile">Profile</a></li>
-                    <li><a href="#contact">Contact me</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/profile">Profile</a></li>
+                    <li><a href="/contact">Contact me</a></li>
                 </ul>
             </nav>
         </header>

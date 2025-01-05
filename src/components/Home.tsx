@@ -11,12 +11,14 @@ const Home: React.FC = () => {
             heroContent.addEventListener('mouseout', handleMouseOut);
         }
 
+        // マウスオーバー処理
         function handleMouseOver(event: MouseEvent) {
             if (event.target instanceof HTMLElement && event.target.classList.contains('char')) {
                 event.target.style.transform = 'scale(1.5)';
             }
         }
 
+        // マウスが外れた処理
         function handleMouseOut(event: MouseEvent) {
             if (event.target instanceof HTMLElement && event.target.classList.contains('char')) {
                 event.target.style.transform = 'scale(1)';

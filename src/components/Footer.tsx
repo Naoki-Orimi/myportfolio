@@ -1,6 +1,6 @@
-"use client"; // クライアントコンポーネントとしてマーク
+"use client";
 
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css'; // CDNでアイコンをインポート
 import React from 'react';
 
 // Font Awesomeのスタイルシートをインポート
