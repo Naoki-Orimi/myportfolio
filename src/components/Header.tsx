@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Link from 'next/link';
 import './Header.css';
 
 const Header: React.FC = () => {
@@ -11,9 +12,10 @@ const Header: React.FC = () => {
             </div>
             <nav className="nav">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/profile">Profile</a></li>
-                    <li><a href="/contact">Contact me</a></li>
+                    <li><Link href="/">Home</Link></li>
+                    <li><Link href="/profile">Profile</Link></li>
+                    <li><Link href="/portfolio">Portfolio</Link></li>
+                    <li><Link href="/contact">Contact me</Link></li>
                 </ul>
             </nav>
         </header>

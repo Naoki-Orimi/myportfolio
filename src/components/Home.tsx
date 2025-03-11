@@ -7,8 +7,8 @@ const Home: React.FC = () => {
     useEffect(() => {
         const heroContent = document.querySelector('.hero-content');
         if (heroContent) {
-            heroContent.addEventListener('mouseover', handleMouseOver);
-            heroContent.addEventListener('mouseout', handleMouseOut);
+            heroContent.addEventListener('mouseover', (e: Event) => handleMouseOver(e as MouseEvent));
+            heroContent.addEventListener('mouseout', (e: Event) => handleMouseOut(e as MouseEvent));
         }
 
         // マウスオーバー処理
@@ -27,8 +27,8 @@ const Home: React.FC = () => {
 
         return () => {
             if (heroContent) {
-                heroContent.removeEventListener('mouseover', handleMouseOver);
-                heroContent.removeEventListener('mouseout', handleMouseOut);
+                heroContent.removeEventListener('mouseover', (e: Event) => handleMouseOver(e as MouseEvent));
+                heroContent.removeEventListener('mouseout', (e: Event) => handleMouseOut(e as MouseEvent));
             }
         };
     }, []);
