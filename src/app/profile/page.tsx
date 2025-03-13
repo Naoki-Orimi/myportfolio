@@ -1,9 +1,9 @@
 // src/app/contact/page.tsx
 import React from 'react';
-import Contact from '@/components/Contact';
+import Profile from '@/components/Profile';
 
-const ContactPage: React.FC = () => {
-  return <Contact />;
+const ProfilePage: React.FC = () => {
+  return <Profile />;
 };
 
-export default ContactPage;
+export default ProfilePage;
